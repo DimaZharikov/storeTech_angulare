@@ -1,0 +1,6 @@
+<div *ngFor="let item of requestData"
+     [id]="item.id"
+     [ngStyle]="{backgroundImage: 'url('+ item.image.tablet.x1 +')'}">
+  <h2>{{item.title}}</h2>
+</div>
+

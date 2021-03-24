@@ -1,0 +1,16 @@
+<div *ngFor="let item of requestData"
+     [id]="item.id"
+>
+    <h1>{{item.title}}</h1>
+    <div>
+      <h2 [id]="item.category.id">Категория: {{item.category.title}}</h2>
+
+      <ul>
+        <li><p>Вторичное использование: {{item.is_second_hand}}</p></li>
+        <li><p>Дискаунт TradeIn: {{item.discount_trade_in}}</p></li>
+        <li><p>Новый: {{item.is_new}}</p></li>
+        <li><p>Условия:{{item.condition}}</p></li>
+        <li><p>Сток версия:{{item.in_stock}}</p></li>
+      </ul>
+    </div>
+</div>
