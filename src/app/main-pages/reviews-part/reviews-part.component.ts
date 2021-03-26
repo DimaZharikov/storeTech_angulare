@@ -12,16 +12,12 @@ export class ReviewsPartComponent implements OnInit {
   }
 
   requestData: ResponseReviewType[] = this.serviceData.data.reviews;
-
+  isImgNull = 'https://www.allianceplast.com/wp-content/uploads/2017/11/no-image.png';
   // ngOnInit(): void {
   //   this.serviceData.getData().subscribe(data => {
   //     this.requestData = data.reviews;
   //   });
   // }
-  ngOnInit(): any {
-    return this.serviceData.getData().subscribe(data => {
-      this.requestData = data.reviews;
-    });
-  }
+  ngOnInit(): any {}
 
 }

@@ -19,10 +19,6 @@ export class LatestBlogPartComponent implements OnInit {
   //     this.responseData = data.latest_blog;
   //   });
   // }
-  ngOnInit(): any {
-    return this.serviceData.getData().subscribe(data => {
-      this.responseData = data.latest_blog;
-    });
-  }
+  ngOnInit(): void {}
 
 }

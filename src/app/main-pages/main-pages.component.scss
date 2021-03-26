@@ -10,7 +10,7 @@
     -webkit-text-fill-color: transparent;
     color: #111010;
     transition: box-shadow 0.3s ease-in-out;
-    cursor: pointer;
+    cursor: default;
     margin-top: 100px;
 
     &:after {
@@ -29,7 +29,13 @@
 
 .proposition_container{
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
+  cursor: default;
+
+  div{
+    width: 50%;
+  }
 
 
 

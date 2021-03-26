@@ -13,15 +13,11 @@ export class NewPropositionsPartComponent implements OnInit {
   }
 
   requestData: ResponsePropositionType[] = this.dataService.data.new_propositions;
-
+  isOpenOptions = false;
   // ngOnInit(): void {
   //   this.dataService.getData().subscribe(data => {
   //     this.requestData = data.new_propositions;
   //   });
   // }
-  ngOnInit(): any {
-    return this.dataService.getData().subscribe(data => {
-      this.requestData = data.new_propositions;
-    });
+  ngOnInit(): any {}
   }
-}

@@ -16,6 +16,11 @@ import { BrandsPartComponent } from './main-pages/brands-part/brands-part.compon
 import { ReviewsPartComponent } from './main-pages/reviews-part/reviews-part.component';
 import { LatestBlogPartComponent } from './main-pages/latest-blog-part/latest-blog-part.component';
 import {BlogIframePipe} from './main-pages/shared/blog-iframe.pipe';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MdbModule } from 'mdb-angular-ui-kit';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatSliderModule} from '@angular/material/slider';
+import {SwiperModule} from 'swiper/angular';
 
 
 @NgModule({
@@ -29,14 +34,18 @@ import {BlogIframePipe} from './main-pages/shared/blog-iframe.pipe';
     BrandsPartComponent,
     ReviewsPartComponent,
     LatestBlogPartComponent,
-    BlogIframePipe
+    BlogIframePipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    CarouselModule,
+    MatSliderModule,
     RouterModule,
+    NgbModule,
+    MdbModule,
+    BrowserAnimationsModule,
+    SwiperModule,
   ],
   providers: [RequestDataService],
   bootstrap: [AppComponent]

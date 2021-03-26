@@ -1,6 +1,13 @@
 <div *ngFor="let item of requestData"
-     [id]="item.id">
-  <h1>{{item.full_name}}</h1>
-  <p>{{item.date}}</p>
-  <p>{{item.review}}</p>
+     [id]="item.id"
+     class="container_reviews">
+  <div class="item_reviews_person">
+    <img src="{{item.image === null? isImgNull : item.image.desktop.x1}}" alt="onLoad photo...">
+    <h1>{{item.full_name}}</h1>
+    <h2>{{item.date}}</h2>
+  </div>
+  <div class="item_reviews_description">
+    <p>{{item.review}}</p>
+  </div>
+
 </div>

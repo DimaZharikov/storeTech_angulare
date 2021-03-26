@@ -1,7 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
-
+@import '~swiper/swiper-bundle';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 .container_in_global{
-  font-family: "Times New Roman"
+  $font-family:  'Noto Sans JP', sans-serif;
+  display: flex;
 
+  .container_nav{
+    margin: 30px;
+    width: 20vw;
+    justify-content: center;
+    font-size: 2em;
+    font-family:$font-family ;
 
+    h1{
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+
+  }
 }
+
+

@@ -4,6 +4,6 @@
   <h1>{{item.title}}</h1>
   <ul *ngFor="let child of item.children"
       [id]="child.id">
-    <li><p>{{child.title}}</p></li>
+    <li><a>{{child.title}}</a></li>
   </ul>
 </div>

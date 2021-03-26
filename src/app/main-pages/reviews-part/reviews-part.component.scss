@@ -1,0 +1,26 @@
+.container_reviews{
+  display: flex;
+  width: 1280px;
+  font-size: 1.3em;
+  padding: 5px;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+
+
+  .item_reviews_person{
+    width: 25%;
+    padding: 15px;
+  }
+  .item_reviews_description{
+    width: 70%;
+    padding: 30px;
+    font-size: 1.5em;
+    line-height: 1.6em;
+  }
+
+  img{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+  }
+}

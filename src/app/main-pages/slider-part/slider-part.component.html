@@ -1,6 +1,18 @@
 <div *ngFor="let item of requestData"
      [id]="item.id"
-     [ngStyle]="{backgroundImage: 'url('+ item.image.tablet.x1 +')'}">
-  <h2>{{item.title}}</h2>
+     [ngStyle]="{ backgroundImage: 'url('+ item.image.desktop.webp_x2 +')',
+     backgroundRepeat: 'no-repeat',
+     backgroundSize: '100%',
+     backgroundPosition: 'center',
+      height: '550px',
+      width: '1200px'}"
+     class="container_slider">
+  <div class="item_discounter">
+    <img src="{{defImgDiscount}}" alt="disc">
+    <h1>{{discount}}%</h1>
+  </div>
+  <div class="item_category">
+    <a href="{{item.link_url}}">{{item.title}}</a>
+  </div>
 </div>
 

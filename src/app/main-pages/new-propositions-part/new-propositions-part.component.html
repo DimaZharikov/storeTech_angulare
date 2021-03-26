@@ -1,16 +1,21 @@
 <div *ngFor="let item of requestData"
      [id]="item.id"
+     class="container"
 >
-  <h1>{{item.title}}</h1>
-  <div>
-    <h2 [id]="item.category.id">Категория: {{item.category.title}}</h2>
+  <h1 (click)="isOpenOptions = !isOpenOptions ">{{item.title}} </h1>
 
-    <ul>
-      <li><p>Вторичное использование: {{item.is_second_hand}}</p></li>
-      <li><p>Дискаунт TradeIn: {{item.discount_trade_in}}</p></li>
-      <li><p>Новый: {{item.is_new}}</p></li>
+  <div *ngIf="isOpenOptions">
+    <h2 [id]="item.category.id"
+    >Категория: {{item.category.title}}</h2>
+
+    <ul >
+      <li><p>Вторичное использование: {{item.is_second_hand? "&#10004;" : "&#10008;"}}</p></li>
+      <li><p>Дискаунт TradeIn: {{item.discount_trade_in? "&#10004;" : "&#10008;"}}</p></li>
+      <li><p>Новый: {{item.is_new? "&#10004;" : "&#10008;"}}</p></li>
       <li><p>Условия:{{item.condition}}</p></li>
-      <li><p>Сток версия:{{item.in_stock}}</p></li>
+      <li><p>Сток версия:{{item.in_stock? "&#10004;" : "&#10008;"}}</p></li>
+      <h1 style='font-size: 2em'>{{item.price}} &#8381;</h1>
     </ul>
+
   </div>
 </div>

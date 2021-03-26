@@ -1,0 +1,47 @@
+.container{
+  font-size: 2em;
+  line-height: 1.1em;
+
+
+
+  h1{
+    cursor: pointer;
+    &:after {
+      content: "";
+      display: block;
+      height: 3px;
+      border-radius: 1.5px 1px;
+      width: 80%;
+      align-items: center;
+      margin: 20px auto;
+      background: #81117f;
+      box-shadow: inset 15px 16px 15px 0px #cf14db;
+    }
+  }
+
+}
+
+.container_price{
+  h1{
+    font-size: 2em;
+    line-height: 1.1em;
+    color: black;
+    &:after{
+      display: none;
+    }
+  }
+
+  .strikethrough {
+    position: relative;
+    &:before {
+      border-bottom: 10px solid red;
+      position: absolute;
+      content: "";
+      width: 45%;
+      height: 50%;
+      transform: rotate(-6deg);
+    }
+  }
+
+}
+

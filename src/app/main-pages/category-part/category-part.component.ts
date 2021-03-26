@@ -18,10 +18,5 @@ export class CategoryPartComponent implements OnInit {
   //     this.requestData = data.categories;
   //   });
   // }
-  ngOnInit(): any {
-    return this.serviceData.getData().subscribe(data => {
-      this.requestData = data.categories;
-    });
-  }
-
+  ngOnInit(): void{}
 }
